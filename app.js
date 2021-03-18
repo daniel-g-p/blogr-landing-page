@@ -59,7 +59,6 @@ desktopCategories.forEach(category => {
             currentLinks.style.opacity = 0;
             currentLinks.style.maxHeight = 0;
             currentLinks.style.maxWidth = 0;
-            setTimeout(() => currentLinks.style.display = "none", 500);
         };
         if (category.classList.contains("active")) {
             desktopCategories.forEach(c => c.classList.remove("active"));
