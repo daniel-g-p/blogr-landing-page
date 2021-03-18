@@ -1,0 +1,653 @@
+/* General Styles */
+
+html {
+    font: 400 16px/1 "Overpass", sans-serif;
+    color: hsl(207, 13%, 34%);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+h1 {
+    font: 600 2.25rem/1 "Overpass", sans-serif;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    z-index: 1;
+    line-height: 1.5;
+}
+
+h2 {
+    font: 600 1.5rem/1 "Overpass", sans-serif;
+    color: hsl(208, 49%, 24%);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font: 600 2.25rem/1 "Overpass", sans-serif;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font: 500 1rem/1 "Ubuntu", sans-serif;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+p {
+    font: 400 1rem/1.5 "Overpass", sans-serif;
+    text-align: center;
+}
+
+a {
+    font: 400 1rem/1 "Ubuntu", sans-serif;
+    color: hsl(240, 2%, 79%);
+    text-align: center;
+    text-decoration: none;
+}
+
+button {
+    font: 600 1rem/1 "Overpass", sans-serif;
+    background: none;
+    color: hsl(0, 0%, 100%);
+    padding: 1em 0;
+    width: 9rem;
+    margin: 0 0.5rem;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 1.75em;
+    transition-property: color, background-color, border-color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    margin-bottom: 1.5rem;
+}
+
+.buttonFill {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+}
+
+
+/* Mobile Layout */
+
+header {
+    position: relative;
+    width: 100%;
+    padding: 3rem 7.5% 9rem;
+    overflow: hidden;
+    background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom-left-radius: 6rem;
+    margin-bottom: 6rem;
+}
+
+#desktopMenu {
+    display: none;
+}
+
+#mobileMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+    z-index: 1;
+}
+
+header p {
+    width: 75%;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1.5rem;
+    z-index: 1;
+}
+
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin-bottom: -1.5rem;
+}
+
+#mobileBackground {
+    position: absolute;
+    top: -6rem;
+    right: -6rem;
+    width: 100%;
+    z-index: 0;
+}
+
+#intro {
+    width: 100%;
+    padding: 0 7.5%;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+#intro img {
+    width: 100%;
+    margin: 1.5rem 0 3rem;
+}
+
+#intro p {
+    margin-bottom: 3rem;
+    line-height: 2;
+}
+
+#infrastructure {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#infrastructure .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#stateOfTheArt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(180deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-top-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+    padding: 15rem 7.5% 6rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 3rem;
+}
+
+#phoneIllustration {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: -15rem;
+    z-index: 2;
+}
+
+#circlesBackground {
+    position: absolute;
+    width: 115%;
+    max-width: 480px;
+    top: -9rem;
+}
+
+#stateOfTheArt p {
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    z-index: 1;
+}
+
+#mainContent {
+    padding: 3rem 7.5%;
+}
+
+#laptopIllustration {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#mainContent p {
+    margin-bottom: 3rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 7.5%;
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 6rem;
+}
+
+footer img {
+    margin-bottom: 1.5rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer a {
+    margin-bottom: 1rem;
+}
+
+
+/* Mobile Navigation Menu */
+
+#mobileMenu svg {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+#mobileMenu svg.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#mobileNav {
+    position: absolute;
+    overflow: hidden;
+    top: 9rem;
+    left: 7.5%;
+    width: 85%;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 3;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+    height: auto;
+    transition-property: max-height, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+#mobileNav>div {
+    padding: 3rem 1.5rem;
+}
+
+.category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.category svg {
+    transition: transform 0.5s ease;
+}
+
+.category p {
+    font: 600 1.25rem/1 'Overpass', sans-serif;
+    margin-right: 0.5rem;
+    transition: color 0.25s ease;
+}
+
+.links {
+    transition: max-height 0.5s ease;
+    overflow: hidden;
+    pointer-events: none;
+    margin: -0.75rem 0 1.5rem;
+}
+
+.links div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-color: hsl(240, 2%, 95%);
+    padding: 1.5rem 0;
+}
+
+.links a {
+    font: 600 1rem/1 'Overpass', sans-serif;
+    color: hsl(207, 13%, 34%);
+    margin: 0.75rem 0;
+    transition: color 0.25s ease;
+}
+
+.category.active svg {
+    transform: rotateZ(180deg);
+}
+
+.category.active p {
+    color: hsl(207, 13%, 50%);
+}
+
+.category.active+.links {
+    pointer-events: all;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+    border-top: 1px solid hsl(240, 2%, 90%);
+}
+
+.login a {
+    font: 600 1.25rem/1 'Overpass', sans-serif;
+    color: hsl(207, 13%, 34%);
+    transition: color 0.25s ease;
+}
+
+.buttonSpecial {
+    font: 500 1rem/1 'Ubuntu', sans-serif;
+    background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(3, 100%, 67%), hsl(353, 100%, 62%));
+    background-size: 200%;
+    background-position: right;
+    color: hsl(0, 0%, 100%);
+    margin: 1.5rem auto 0;
+    transition: background-position 0.25s ease;
+}
+
+
+/* Desktop Navigation Menu */
+
+#desktopMenu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#desktopMenu img {
+    margin-right: 3rem;
+}
+
+#desktopNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.desktopLinks {
+    position: absolute;
+    top: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 3;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition-property: max-height, max-width, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    pointer-events: none;
+}
+
+.desktopCategory.active .desktopLinks {
+    pointer-events: all;
+}
+
+.desktopLinks>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1.5rem 3rem 1.5rem 1.5rem;
+}
+
+.desktopLinks a {
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: hsl(207, 13%, 34%);
+    transition: color 0.25s ease;
+}
+
+.desktopCategory {
+    position: relative;
+    padding: 0 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.25s ease;
+}
+
+.desktopCategory p {
+    position: relative;
+    margin: 0 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.desktopCategory path {
+    stroke: hsl(0, 0%, 100%);
+}
+
+.desktopCategory svg {
+    transition: transform 0.5s ease;
+}
+
+.desktopCategory.active svg {
+    transform: rotateZ(180deg);
+}
+
+#desktopMenu .login {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: end;
+    border: none;
+    padding: 0;
+}
+
+#desktopMenu .login a {
+    color: hsl(0, 0%, 100%);
+    transition: transform 0.25s ease;
+}
+
+#desktopMenu button {
+    margin: 0 0 0 1.5rem;
+}
+
+
+/* Hover States */
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+}
+
+.buttonFill:hover {
+    cursor: pointer;
+    border-color: hsl(355, 100%, 74%);
+    background-color: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+}
+
+.buttonSpecial:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-position: left;
+}
+
+footer a::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    margin-top: 4px;
+    margin-left: 50%;
+    background-color: hsl(240, 2%, 79%);
+    opacity: 0;
+    transition-property: width, opacity, margin-left;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+footer a:hover::after {
+    opacity: 1;
+    width: 100%;
+    margin-left: 0;
+}
+
+.category:hover {
+    cursor: pointer;
+}
+
+.category:hover p,
+.login a:hover {
+    color: hsl(207, 13%, 50%);
+}
+
+.links a:hover {
+    color: hsl(207, 13%, 50%);
+}
+
+.desktopCategory::after {
+    position: absolute;
+    display: block;
+    top: 1rem;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 3px;
+    margin-top: 4px;
+    margin-left: 24px;
+    background-color: hsl(0, 0%, 100%);
+    opacity: 0;
+    transition-property: width, opacity, margin-left;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+.desktopCategory:hover {
+    cursor: pointer;
+}
+
+.desktopCategory:hover::after {
+    opacity: 1;
+    width: calc(100% - 60px);
+}
+
+.desktopLinks a:hover {
+    color: hsl(356, 100%, 66%);
+}
+
+#desktopMenu .login a:hover {
+    transform: scale(1.1);
+}
+
+
+/* Media Queries */
+
+@media (min-width: 960px) {
+    #desktopMenu {
+        display: flex;
+    }
+    #mobileMenu {
+        display: none;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    #intro p {
+        text-align: justify;
+    }
+    #intro>div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #intro>h2 {
+        font-size: 2.25rem;
+        margin-bottom: 3rem;
+    }
+    #introImage {
+        width: 60%;
+        max-width: 800px;
+        margin-right: -25%;
+    }
+    #introText {
+        width: 60%;
+    }
+    #introText h2 {
+        text-align: left;
+    }
+    #infrastructure .container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #phoneIllustration {
+        position: absolute;
+        max-width: 540px;
+        left: 3rem;
+        bottom: 6rem;
+    }
+    #circlesBackground {
+        width: 60%;
+        max-width: initial;
+        left: -6rem;
+    }
+    #stateOfTheArt {
+        align-items: flex-start;
+        padding: 9rem 6rem;
+    }
+    #stateOfTheArt h3,
+    #stateOfTheArt p {
+        text-align: left;
+        margin-left: 31.5rem;
+    }
+    #mainContent {
+        margin-top: 9rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #mainContent div {
+        width: 60%;
+    }
+    #mainContent div h2,
+    #mainContent div p {
+        text-align: left;
+    }
+    #laptopIllustration {
+        width: 100%;
+        max-width: 960px;
+        margin-left: -40%;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 3rem 15%;
+    }
+    footer img {
+        margin-top: 1.5rem;
+    }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogr Landing Page</title>
+    <link rel="shortcut icon" type="icon/png" href="favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <header>
+        <div id="desktopMenu">
+            <div class="navContainer">
+                <img src="logo.svg" alt="Blogr Logo">
+                <nav id="desktopNav">
+                    <div class="desktopCategory">
+                        <p>Product</p>
+                        <svg width="12" height="7">
+                            <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" />
+                        </svg>
+                        <div class="desktopLinks" style="max-height: 0; max-width: 0; opacity: 0;">
+                            <div>
+                                <a href="">Overview</a>
+                                <a href="">Pricing</a>
+                                <a href="">Marketplace</a>
+                                <a href="">Features</a>
+                                <a href="">Integrations</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktopCategory">
+                        <p>Company</p>
+                        <svg width="12" height="7">
+                            <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" />
+                        </svg>
+                        <div class="desktopLinks" style="max-height: 0; max-width: 0; opacity: 0;">
+                            <div>
+                                <a href="">About</a>
+                                <a href="">Team</a>
+                                <a href="">Blog</a>
+                                <a href="">Careers</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktopCategory">
+                        <p>Connect</p>
+                        <svg width="12" height="7">
+                            <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" />
+                        </svg>
+                        <div class="desktopLinks" style="max-height: 0; max-width: 0; opacity: 0;">
+                            <div>
+                                <a href="">Contact</a>
+                                <a href="">Newsletter</a>
+                                <a href="">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="login">
+                <a href="">Login</a>
+                <button class="buttonFill">Sign Up</button>
+            </div>
+        </div>
+        <div id="mobileMenu">
+            <img src="logo.svg" alt="Blogr Logo">
+            <svg width="32" height="18" id="openNav" class="active" style="display: block;">
+                <g fill="#FFF" fill-rule="evenodd">
+                    <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+                </g>
+            </svg>
+            <svg width="26" height="26" id="closeNav" style="display: none;">
+                <path
+                    d="M23.607.98l1.414 1.413L14.414 13l10.607 10.607-1.414 1.414L13 14.414 2.393 25.021.98 23.607 11.586 13 .98 2.393 2.393.98 13 11.586 23.607.98z"
+                    fill="#FFF" fill-rule="evenodd" />
+            </svg>
+        </div>
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div class="buttonRow">
+            <button class="buttonFill">Start for Free</button>
+            <button>Learn More</button>
+        </div>
+        <img src="bg-pattern-intro.svg" alt="Background" id="mobileBackground">
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Designed for the future</h2>
+            <div>
+                <div id="introImage">
+                    <img src="illustration-editor-mobile.svg" alt="Illustration Editor">
+                </div>
+                <div id="introText">
+                    <h2>Introducing an extensible editor</h2>
+                    <p>Blogr features an exceedingly intuitive interface which lets oyou focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility
+                        with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+                    </p>
+                    <h2>Robust content management</h2>
+                    <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, formats, or flow. With this functionality, you're in full control.</p>
+                </div>
+            </div>
+        </section>
+        <section id="infrastructure">
+            <div class="container">
+                <img src="illustration-phones.svg" alt="Phones" id="phoneIllustration">
+                <div id="stateOfTheArt">
+                    <img src="bg-pattern-circles.svg" alt="Circles" id="circlesBackground">
+                    <h3>State of the Art Infrastructure</h3>
+                    <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+                </div>
+            </div>
+            <div id="mainContent">
+                <img src="illustration-laptop-mobile.svg" alt="Laptop" id="laptopIllustration">
+                <div>
+                    <h2>Free, open, simple</h2>
+                    <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly
+                        with Google Analytics. The architecture is clean and is relatively easy to learn.
+                    </p>
+                    <h2>Powerful tooling</h2>
+                    <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="logo.svg" alt="Blogr Logo">
+        <nav>
+            <h4>Product</h4>
+            <a href="">Overview</a>
+            <a href="">Pricing</a>
+            <a href="">Marketplace</a>
+            <a href="">Features</a>
+            <a href="">Integrations</a>
+        </nav>
+        <nav>
+            <h4>Company</h4>
+            <a href="">About</a>
+            <a href="">Team</a>
+            <a href="">Blog</a>
+            <a href="">Careers</a>
+        </nav>
+        <nav>
+            <h4>Connect</h4>
+            <a href="">Contact</a>
+            <a href="">Newsletter</a>
+            <a href="">LinkedIn</a>
+        </nav>
+        </nav>
+    </footer>
+    <nav id="mobileNav" style="max-height: 0; display: none; opacity: 0;">
+        <div>
+            <div class="category">
+                <p>Product</p>
+                <svg width="10" height="7">
+                    <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" />
+                </svg>
+            </div>
+            <div class="links" style="max-height: 0;">
+                <div>
+                    <a href="">Overview</a>
+                    <a href="">Pricing</a>
+                    <a href="">Marketplace</a>
+                    <a href="">Features</a>
+                    <a href="">Integrations</a>
+                </div>
+            </div>
+            <div class="category">
+                <p>Company</p>
+                <svg width="10" height="7">
+                    <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" />
+                </svg>
+            </div>
+            <div class="links" style="max-height: 0;">
+                <div>
+                    <a href="">About</a>
+                    <a href="">Team</a>
+                    <a href="">Blog</a>
+                    <a href="">Careers</a>
+                </div>
+            </div>
+            <div class="category">
+                <p>Connect</p>
+                <svg width="10" height="7">
+                    <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" />
+                </svg>
+            </div>
+            <div class="links" style="max-height: 0;">
+                <div>
+                    <a href="">Contact</a>
+                    <a href="">Newsletter</a>
+                    <a href="">LinkedIn</a>
+                </div>
+            </div>
+            <div class="login">
+                <a href="">Login</a>
+                <button class="buttonSpecial">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+    <script src="app.js"></script>
+</body>
+
+</html>
